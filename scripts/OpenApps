@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# SCRIPTS
+
+WIDGET_DIR="$HOME/.config/bspwm/eww"
+
+case "$1" in
+    --menu)
+        rofi -show drun -theme "$HOME"/.config/bspwm/src/rofi-themes/Launcher.rasi 
+        ;;
+    --terminal)
+        kitty 
+        ;;
+    --update)
+        Term --update 
+        ;;
+    --checkupdates)
+        Term --checkupdates
+        ;;
+    --netmanager)
+		NetManagerDM
+		;;
+	--powermenu)
+        PowerMenu
+        ;;
+    *)
+        echo "Invalid Option"
+        ;;
+esac

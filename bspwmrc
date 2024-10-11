@@ -7,7 +7,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 export PATH="$HOME/.config/bspwm/scripts:$PATH"
 
-bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6'
+bspc monitor -d '1' '2' '3' '4' '5' '6' '7' '8'
 
 processes=("sxhkd" "polybar" "dunst" "xfce4-clipman")
 

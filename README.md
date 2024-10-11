@@ -12,7 +12,7 @@ git clone https://github.com/devup2332/bspwm-2024 ~/.config bspwm
 ```
 
 ```bash
-sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-clipman xfce4-clipman-plugin thunar dolphin neovim python-setuptools ripgrep
+sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-clipman-plugin thunar dolphin neovim python-setuptools ripgrep
 ```
 
 ## ⚡️ Requirements

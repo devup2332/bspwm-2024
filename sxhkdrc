@@ -24,9 +24,9 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# Kill App 
-super + w
-	bspc node -k
+# Close and kill application
+super + {_,shift + }w
+	bspc node -{c,k}
 
 # Alternate between the tiled and monocle layout
 super + m

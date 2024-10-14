@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+# Main var
+MY_TERM="kitty"
+
+case $MY_TERM in
+    "alacritty")
+        case $1 in
+            "--terminal")
+                alacritty
+                ;;
+            "--floating")
+                alacritty --class FloaTerm,FloaTerm
+                ;;
+            "--update")
+                alacritty --hold --class FloaTerm,FloaTerm -e Updates --update-system
+                ;;
+            "--checkupdates")
+                alacritty --hold --class Updating,Updating -e Updates --print-updates
+                ;;
+            "--ranger")
+                alacritty --class RangerTerm,RangerTerm -e ranger
+                ;;
+            "--nvim")
+                alacritty -e nvim
+                ;;
+            "--music")
+                alacritty --class MusicTerm,MusicTerm -e ncmpcpp
+                ;;
+            "--fetch")
+                alacritty --class FetchTerm,FetchTerm -e ~/.local/bin/sysfetch
+                ;;
+        esac
+        ;;
+    "kitty")
+        case $1 in
+            "--terminal")
+                kitty
+                ;;
+            "--floating")
+                kitty --class=FloaTerm
+                ;;
+            "--update")
+                kitty --hold --class=FloaTerm -e Updates --update-system
+                ;;
+            "--checkupdates")
+                kitty --hold --class=Updating -e Updates --print-updates
+                ;;
+            "--ranger")
+                kitty --hold --class=RangerTerm -e ranger
+                ;;
+            "--nvim")
+                kitty -e nvim
+                ;;
+            "--music")
+                kitty --class=MusicTerm -e ncmpcpp
+                ;;
+            "--fetch")
+                kitty --class=FetchTerm -e ~/.local/bin/sysfetch
+                ;;
+        esac
+        ;;
+esac

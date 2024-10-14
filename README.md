@@ -11,8 +11,10 @@ This is my configuration to use bspwm as a main window manager
 git clone https://github.com/devup2332/bspwm-2024 ~/.config bspwm
 ```
 
+Install the required packages for Arch Linux
+
 ```bash
-sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-clipman-plugin thunar dolphin neovim python-setuptools ripgrep
+sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-clipman-plugin thunar dolphin neovim python-setuptools ripgrep pulseaudio
 ```
 
 ## ⚡️ Requirements

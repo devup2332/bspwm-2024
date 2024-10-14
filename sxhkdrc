@@ -12,6 +12,10 @@ super + Return
 super + m 
   rofi -show drun	
 
+# Google Chrome
+super + g
+  google-chrome-stable
+
 # Launch explorer 
 super + e 
   thunar	
@@ -35,10 +39,6 @@ super + m
 # Send the newest marked node to the newest preselected node
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
-
-# swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
 
 #
 # state/flags

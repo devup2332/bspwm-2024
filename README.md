@@ -17,9 +17,15 @@ Install the required packages for Arch Linux
 sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-clipman-plugin thunar dolphin neovim python-setuptools ripgrep pulseaudio lazygit
 ```
 
+Intall fonts
+```bash
+sudo pacman -S ttf-nerd-fonts-symbols ttf-intone-nerd
+```
+
 ## ⚡️ Requirements
 
 - Bspwm
 - Kitty or Alacritty
 - Rofi
+- Paru or Yay
 - Eww (optional)

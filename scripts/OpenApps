@@ -17,12 +17,6 @@ case "$1" in
     --checkupdates)
         Term --checkupdates
         ;;
-    --netmanager)
-		NetManagerDM
-		;;
-	--powermenu)
-        PowerMenu
-        ;;
     *)
         echo "Invalid Option"
         ;;

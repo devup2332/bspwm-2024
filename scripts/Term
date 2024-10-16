@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Main var
 MY_TERM="kitty"
+CONFIG_PATH="$HOME/.config/bspwm/kitty/kitty.conf"
 
 case $MY_TERM in
     "alacritty")
@@ -40,10 +41,10 @@ case $MY_TERM in
                 kitty --class=FloaTerm
                 ;;
             "--update")
-                kitty --hold --class=FloaTerm -e Updates --update-system
+                kitty -c "$CONFIG_PATH" --hold --class=FloaTerm -e Updates --update-system 
                 ;;
             "--checkupdates")
-                kitty --hold --class=Updating -e Updates --print-updates
+                kitty -c "$CONFIG_PATH" --hold --class=Updating -e Updates --print-updates
                 ;;
             "--ranger")
                 kitty --hold --class=RangerTerm -e ranger

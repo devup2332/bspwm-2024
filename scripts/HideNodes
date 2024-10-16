@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+HideNodes() {
+  NODES=$(bspc query -N -n '.!focused.window' -d $Desktop)
+
+  for node in $NODES; do
+    bspc node "$node" -g hidden=on
+  done
+}
+ShowNodes() {
+  NODES=$(bspc query -N -n .tiled -d $Desktop)
+
+  for node in $NODES; do
+    bspc node "$node" -g hidden=off
+  done
+}
+
+LAYOUT=$(bspc query -T -d | jq -r .layout)
+echo $LAYOUT
+case $LAYOUT in
+  tiled)
+    HideNodes
+    ;;
+
+  monocle)
+    ShowNodes
+    ;;
+
+    *)
+    echo "Invalid Option"
+    ;;
+
+esac

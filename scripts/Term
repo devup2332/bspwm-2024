@@ -1,28 +1,29 @@
 #!/usr/bin/env bash
 # Main var
-MY_TERM="kitty"
-CONFIG_PATH="$HOME/.config/bspwm/kitty/kitty.conf"
+MY_TERM="alacritty"
+CONFIG_PATH_KITTY="$HOME/.config/bspwm/kitty/kitty.conf"
+CONFIG_PATH_ALACRITTY="$HOME/.config/bspwm/alacritty/alacritty.toml"
 
 case $MY_TERM in
     "alacritty")
         case $1 in
             "--terminal")
-                alacritty
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY"
                 ;;
             "--floating")
-                alacritty --class FloaTerm,FloaTerm
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY" --class FloaTerm,FloaTerm
                 ;;
             "--update")
-                alacritty --hold --class FloaTerm,FloaTerm -e Updates --update-system
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY" --hold --class FloaTerm,FloaTerm -e Updates --update-system
                 ;;
             "--checkupdates")
-                alacritty --hold --class Updating,Updating -e Updates --print-updates
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY" --hold --class Updating,Updating -e Updates --print-updates
                 ;;
             "--ranger")
-                alacritty --class RangerTerm,RangerTerm -e ranger
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY" --class RangerTerm,RangerTerm -e ranger
                 ;;
             "--nvim")
-                alacritty -e nvim
+                alacritty --config-file "$CONFIG_PATH_ALACRITTY" -e nvim
                 ;;
             "--music")
                 alacritty --class MusicTerm,MusicTerm -e ncmpcpp
@@ -35,16 +36,16 @@ case $MY_TERM in
     "kitty")
         case $1 in
             "--terminal")
-                kitty
+                kitty -c "$CONFIG_PATH_KITTY"
                 ;;
             "--floating")
                 kitty --class=FloaTerm
                 ;;
             "--update")
-                kitty -c "$CONFIG_PATH" --hold --class=FloaTerm -e Updates --update-system 
+                kitty -c "$CONFIG_PATH_KITTY" --hold --class=FloaTerm -e Updates --update-system 
                 ;;
             "--checkupdates")
-                kitty -c "$CONFIG_PATH" --hold --class=Updating -e Updates --print-updates
+                kitty -c "$CONFIG_PATH_KITTY" --hold --class=Updating -e Updates --print-updates
                 ;;
             "--ranger")
                 kitty --hold --class=RangerTerm -e ranger

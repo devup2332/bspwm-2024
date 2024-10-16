@@ -6,7 +6,7 @@ super + Escape
 
 # Launch Terminal 
 super + Return
-	kitty -c ~/.config/bspwm/kitty/kitty.conf
+  Term --terminal
 
 # Rofi 
 super + m 

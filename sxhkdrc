@@ -12,6 +12,10 @@ super + Return
 super + m 
   rofi -show drun	
 
+# Rofi 
+super + f
+  firefox
+
 # Google Chrome
 super + g
   google-chrome-stable

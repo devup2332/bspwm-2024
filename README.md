@@ -19,7 +19,7 @@ sudo pacman -S bspwm polybar picom sxhkd dunst kitty alacritty rofi feh xfce4-cl
 
 Intall fonts
 ```bash
-sudo pacman -S ttf-nerd-fonts-symbols ttf-intone-nerd
+sudo pacman -S ttf-nerd-fonts-symbols ttf-intone-nerd ttf-hack-nerd
 ```
 
 ## ⚡️ Requirements

@@ -31,6 +31,9 @@ case $MY_TERM in
             "--fetch")
                 alacritty --class FetchTerm,FetchTerm -e ~/.local/bin/sysfetch
                 ;;
+            "--ranger")
+                alacritty --class FetchTerm,FetchTerm -e ranger 
+                ;;
         esac
         ;;
     "kitty")

@@ -13,6 +13,10 @@ super + m
   rofi -show drun	
 
 # Rofi 
+super + r
+  Term --ranger
+
+# Rofi 
 super + f
   firefox
 

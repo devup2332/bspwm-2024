@@ -5,8 +5,8 @@ family = "IntoneMono Nerd Font Mono"
 size = 13
 
 [window.padding]
-x = 30
-y = 30
+x = 20
+y = 20
 
 [window]
 opacity = 0.9
@@ -16,7 +16,7 @@ TERM = "xterm-256color"
 
 # Default colors
 [colors.primary]
-background = '#0b0c0f'
+background = '#1a1b26'
 foreground = '#a9b1d6'
 
 # Normal colors

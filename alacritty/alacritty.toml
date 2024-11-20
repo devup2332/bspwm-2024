@@ -16,7 +16,7 @@ TERM = "xterm-256color"
 
 # Default colors
 [colors.primary]
-background = '#0b0c0f'
+background = "#1a1b26"
 foreground = '#a9b1d6'
 
 # Normal colors

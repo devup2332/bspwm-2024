@@ -2,6 +2,7 @@
 
 HideNodes() {
   NODES=$(bspc query -N -n '.!focused.window' -d $Desktop)
+  echo $Desktop 
 
   for node in $NODES; do
     bspc node "$node" -g hidden=on
@@ -16,7 +17,6 @@ ShowNodes() {
 }
 
 LAYOUT=$(bspc query -T -d | jq -r .layout)
-echo $LAYOUT
 case $LAYOUT in
   tiled)
     HideNodes

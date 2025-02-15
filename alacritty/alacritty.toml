@@ -9,14 +9,14 @@ x = 20
 y = 20
 
 [window]
-opacity = 1
+opacity = 0.6
 
 [env]
 TERM = "xterm-256color"
 
 # Default colors
 [colors.primary]
-background = "#1a1b26"
+background = "#000000"
 foreground = '#a9b1d6'
 
 # Normal colors

@@ -49,4 +49,4 @@ pidof -q polybar || { polybar --config="${HOME}"/.config/bspwm/polybar/config.in
 pidof -q picom || { picom --config "${HOME}"/.config/bspwm/picom/picom.conf & }
 pidof -q dunst || { dunst -config "${HOME}"/.config/bspwm/dunstrc & }
 pidof -q xfce4-clipman || { xfce4-clipman & }
-feh --bg-fill "${HOME}"/.config/bspwm/assets/wallpaper_main.png &
+feh --bg-fill "${HOME}"/.config/bspwm/assets/wallpaper_main.jpeg &

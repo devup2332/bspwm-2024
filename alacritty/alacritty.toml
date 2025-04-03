@@ -5,11 +5,11 @@ family = "IntoneMono Nerd Font Mono"
 size = 12
 
 [window.padding]
-x = 20
-y = 10
+x = 30
+y = 30
 
 [window]
-opacity = 0.8
+opacity = 1
 
 [window.dimensions]
 columns = 140
@@ -21,7 +21,7 @@ TERM = "xterm-256color"
 # Theme
 
 [colors.primary]
-background = '#000000' # base
+background = '#10111c' # base
 foreground = '#CDD6F4' # text
 # Bright and dim foreground colors
 dim_foreground = '#CDD6F4' # text

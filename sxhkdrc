@@ -21,8 +21,8 @@ super + f
   firefox
 
 # Google Chrome
-super + g
-  google-chrome-stable
+super + g 
+  chromium
 
 # Launch explorer 
 super + e 
